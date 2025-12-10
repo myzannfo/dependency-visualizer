@@ -1,0 +1,6 @@
+python3 dependency_viz.py --package serde --repo https://crates.io/crates/serde
+
+python3 dependency_viz.py --package tokio --repo https://crates.io/crates/tokio --version 1.0.0
+
+python3 dependency_viz.py --package clap --repo https://crates.io/crates/clap --version 3.0.0  
+

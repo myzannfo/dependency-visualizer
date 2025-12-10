@@ -1,0 +1,44 @@
+// Dependencies of tokio
+digraph {
+	tokio [label=tokio color=blue shape=box]
+	tokio -> "async-stream"
+	tokio -> autocfg
+	tokio -> futures
+	tokio -> libc
+	tokio -> loom
+	tokio -> nix
+	tokio -> "pin-project-lite"
+	tokio -> proptest
+	tokio -> tempfile
+	tokio -> bytes
+	tokio -> libc
+	tokio -> memchr
+	tokio -> mio
+	tokio -> num_cpus
+	tokio -> once_cell
+	tokio -> parking_lot
+	tokio -> "signal-hook-registry"
+	tokio -> "tokio-macros"
+	tokio -> tracing
+	tokio -> winapi
+	"async-stream" [label="async-stream"]
+	"async-stream" -> "async-stream-impl"
+	"async-stream" -> "futures-core"
+	"async-stream" -> "futures-util"
+	"async-stream" -> "pin-project-lite"
+	"async-stream" -> rustversion
+	"async-stream" -> tokio
+	"async-stream" -> trybuild
+	futures [label=futures]
+	futures -> assert_matches
+	futures -> "futures-channel"
+	futures -> "futures-core"
+	futures -> "futures-io"
+	futures -> "futures-sink"
+	futures -> "futures-task"
+	futures -> "futures-util"
+	futures -> "pin-project"
+	futures -> static_assertions
+	futures -> tokio
+	futures -> "futures-executor"
+}
